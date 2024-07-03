@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><u>MindWell Clinic</u></h1>
+        <nav>
+            <ul>
+                <li><a href="#jadwal">Jadwal Konsultasi</a></li>
+                <li><a href="#buat-janji">Buat Janji</a></li>
+                <li><a href="lihatJanji.php">Lihat Janji</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="jadwal">
+            <h2>Jadwal Konsultasi</h2>
+            <table>
+                <tr>
+                    <td rowspan="2"><h3>Nama Dokter</h3></td>
+                    <td colspan="7"><h3 id="judulHari">Hari</h3></td>
+                </tr>
+                <tr>
+                    <td class="Hari"><h3>Senin</h3></td>
+                    <td class="Hari"><h3>Selasa</h3></td>
+                    <td class="Hari"><h3>Rabu</h3></td>
+                    <td class="Hari"><h3>Kamis</h3></td>
+                    <td class="Hari"><h3>Jumat</h3></td>
+                    <td class="Hari"><h3>Sabtu</h3></td>
+                    <td class="Hari"><h3>Minggu</h3></td>
+                </tr>
+                <tr>
+                    <td>Dr. Amira <br>
+                        <button onclick="pilihDokter('Dr. Amira')">Buat Janji</button>
+                    </td>
+                    <td class="jam">10:30-13:30</td>
+                    <td class="jam">08:30-13:30</td>
+                    <td class="jam">10:30-13:30</td>
+                    <td class="jam">08:30-13:30</td>
+                    <td class="jam">10:30-13:30</td>
+                    <td class="jam">08:30-13:30</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Dr. Budi <br>
+                        <button onclick="pilihDokter('Dr. Budi')">Buat Janji</button>
+                    </td>
+                    <td>-</td>
+                    <td class="jam">13:30-15:30</td>
+                    <td class="jam">14:30-15:30</td>
+                    <td>-</td>
+                    <td class="jam">11:30-13:30</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <br>
+        </section>
+
+        <section id="buat-janji">
+            <h2>Buat Janji Konsultasi</h2>
+            <form id="appointment-form" method="post" action="janji.php" onsubmit="return validateForm()">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="telp">Nomor Telepon:</label>
+                <input type="tel" id="telp" name="telp" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="tanggal">Tanggal Janji:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+                <label for="jam">Waktu:</label>
+                <input type="time" id="jam" name="jam" required>
+                <label for="dokter">Dokter:</label>
+                <input type="text" id="dokter" name="dokter" readonly required>
+                <input class = "masuk" type="submit" name="submit" value="Buat Janji">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 MindWell Clinic. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

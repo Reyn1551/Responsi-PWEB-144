@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ebfaff;
+}
+
+#Bungkus {
+    width: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #d0e3f1;
+    border: 12px solid #6497b1;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px #b3cde0;
+    text-align: left;
+    margin: 20px;
+}
+
+#Bungkus table {
+    width: 100%;
+}
+
+#Bungkus table td {
+    padding: 10px 5px;
+}
+
+#Tombol{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    text-align: center;
+    background-color: black;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6497b1;
+}
+
+button:hover {
+    background-color: #537a91;
+}
+
+table td tr{
+    padding: 100px;
+    margin: 100px;
+}
+
