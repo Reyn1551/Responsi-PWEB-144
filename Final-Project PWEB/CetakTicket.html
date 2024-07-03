@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetak Ticket</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Cetak Ticket</h2>
+        <form name="formCetak" method="post" action="cetak.php">
+            <div class="input-box">
+                <input name="email" type="email" placeholder="Masukan E-mail" required id="email">
+            </div>
+            <div class="input-box">
+                <input name="ticketNumber" type="text" placeholder="Masukan No Ticket" required id="ticketNumber">
+            </div>
+            <div class="input-box button">
+                <input type="submit" value="Cetak">
+            </div>
+        </form>
+        <div id="infoTicket">
+        </div>
+    </div>
+</body>
+
+</html>

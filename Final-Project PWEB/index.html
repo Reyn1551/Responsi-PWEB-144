@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Ticket</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>Pendaftaran Ticket</h2>
+    <form name="formDaftar" method="post" action="ticket.php">
+      <div class="input-box">
+        <input name="nama" type="text" placeholder="Masukan Nama Lengkap" required id="nama">
+      </div>
+      <div class="input-box">
+        <input name="email" type="email" placeholder="Masukan E-mail" required id="email">
+      </div>
+      <div class="input-box">
+        <input name="telp" type="tel" placeholder="Masukan Nomor Telepon" required id="telp">
+      </div>
+      <div class="input-box">
+        <input name="NIK" type="number" placeholder="Masukan Nomor Identitas (SIM/KTP)" required id="NIK">
+      </div>
+      <div class="input-box">
+        <input name="alamat" type="text" placeholder="Masukan Alamat" required id="alamat">
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Submit">
+      </div>
+      <div class="text" id="coba">
+        <h3>Sudah Memiliki Ticket? <a href="CetakTicket.html">Cetak Sekarang!</a></h3>
+      </div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
